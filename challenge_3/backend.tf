@@ -1,6 +1,6 @@
 # S3 Bucket
-resource "aws_s3_bucket" "statestorebucket12345678917" {
-  bucket = "statestorebucket12345678917"
+resource "aws_s3_bucket" "statestorebucket123456789101" {
+  bucket = "statestorebucket123456789101"
   acl    = "private"
   lifecycle_rule {
     id      = "remove_old_files"

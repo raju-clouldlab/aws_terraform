@@ -18,7 +18,7 @@ cat >> provider.tf << EOF
 #To add s3 for remote backend for the terrafrom state file.
 terraform {
   backend "s3" {
-    bucket          = "statestorebucket12345678917"
+    bucket          = "statestorebucket123456789101"
     key             = "terraform.tfstate"
     dynamodb_table = "state_lock"
     region          = "us-east-1"

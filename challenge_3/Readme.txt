@@ -2,7 +2,8 @@
 1. Make sure the chanllenge_3 directory has these seven files (main.tf, backend.tf, nginx.sh.tpl, myproject.sh, versions.tf, tfversions_readme and Readme.txt)
   * Main.tf has the configuration of (ec2, keypairs, security groups and their ports)
   * backend.tf has the configuration of the (s3 bucket and dynamodb)
-  * ngins.sh.tpl has the userdata script that runs on ec2 to create html page on nginx on port 8080 and change the hostname to pinky1.
+  * nginx.sh.tpl has the userdata script that runs on ec2 to create html page on nginx on port 8080 and change the hostname to pinky1.
+    this can be tested coping the public ip and pasting on chrome with http (eg:http://44.203.93.98:8080/)
   * myproject.sh is the script file that will configure aws profile and perform the terraform init plan and apply comands to deploy the infrastructure and also configure the s3 backend for terraform tf storage.
 
 2 To deploy the infrastructure run the myproject.sh in the challenge_3 directory  
